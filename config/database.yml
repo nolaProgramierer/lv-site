@@ -9,6 +9,7 @@ default: &default
 development:
   <<: *default
   database: lv_site_development
+  user: glennlangdon
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -26,6 +27,7 @@ development:
 test:
   <<: *default
   database: lv_site_test
+  user: glennlangdon
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,5 +51,5 @@ test:
 production:
   <<: *default
   database: lv_site_production
-  username: lv_site
+  username: glennlangdon
   # password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
