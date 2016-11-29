@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-
-  resources :users
-  resources :articles
-  root 'welcome#index'
-
+  root                 'welcome#index'
+  get     'login'  =>  'sessions#new'
+  post    'login'  =>  'sessions#create'
+  delete  'logout' =>  'sessions#destroy'
+  resources       :users
+  resources       :articles
 end
