@@ -1,11 +1,21 @@
 <% provide(:title, "Blog Article") %>
-<h2>Article Listing</h2>
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-<p>
-  <strong>Article Text:</strong>
-  <%= @article.body %>
-</p>
-<%= link_to "Article Listing", articles_path %>
+
+  <div class="row text-center articles-section">
+    <h1><%= @article.title.html_safe %></h1>
+    <p class="article-created-time">
+      <%= @article.created_at.strftime("%d %B %G") %>
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 article-body articles-section">
+      <%= @article.body.html_safe %>
+    </div>
+  </div>
+  <div class="row">
+    <%= link_to "Back to Articles", articles_path, class: "col-md-2" %>
+    <%= link_to "Edit Article", edit_article_path(@article), class: "col-md-2" %>
+    <%= link_to "Delete Article", article_path(@article),
+              mehtod: :delete,
+              data: {confirm: 'Are you sure?'},
+              class: "col-md-2" %>
+  </div>
