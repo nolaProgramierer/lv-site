@@ -1,0 +1,11 @@
+<% provide(:title, "Blog Article") %>
+<h2>Article Listing</h2>
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+<p>
+  <strong>Article Text:</strong>
+  <%= @article.body %>
+</p>
+<%= link_to "Article Listing", articles_path %>
