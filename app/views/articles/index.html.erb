@@ -1,20 +1,20 @@
 <% provide(:title, "Article listing") %>
 <%= link_to "New Article", new_article_path %>
+<%= link_to "Home page", root_path %>
 
 <section class="articles-section">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
 
-        <% @articles.each do |article| %>
-        <h1 class="text-center">
-          <%= link_to article.title, article_path(article) %>
-        </h1>
-          <%= article.body.truncate_words(50).html_safe %>
-          <p class="article-created-time">
-            <%= article.created_at.strftime("%d %B %G") %>
-          </p>
-        <% end %>
-      </div>
+      <% @articles.each do |article| %>
+      <h1 class="text-center">
+        <%= link_to article.title, article_path(article) %>
+      </h1>
+        <%= article.body.truncate_words(50).html_safe %>
+        <p class="article-created-time">
+          <%= article.created_at.strftime("%d %B %G") %>
+        </p>
+      <% end %>
     </div>
-  </section>
-  <%= link_to "Home page", root_path %>
+  </div>
+</section>

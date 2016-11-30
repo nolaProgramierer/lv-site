@@ -1,8 +1,11 @@
 <% provide(:title, "Home") %>
-<h1>Lar's Rails website</h1>
-  <p>
-    The time is <%= Time.now %>.
-  </p>
-  <p>
-    <%= link_to "Laurie's blog", articles_path %>
+  <div class="row">
+    <%= image_tag('lv-splash-img-web.jpg', alt: "Glenn Langdon with baton", class: "img-responsive",
+                  id: "splash-img") %>
+  </div>
+    <p>
+      The time is <%= Time.now %>.
+    </p>
+    <p>
+      <%= link_to "Laurie's blog", articles_path %>
   </p>
