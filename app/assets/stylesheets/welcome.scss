@@ -18,9 +18,26 @@
 //   margin-right: auto;
 // }
 
-.navbar-brand{
-  font-size: 3em;
+.navbar {
+  background: url(image-path("lv_nav_bckgrd.jpg")) center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  border-color: transparent;
+  border-radius: 0;
+  margin-bottom: 0;
+  border-top: 2px;
+  border-color: lightgray;
 }
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
 .articles-section {
 	font-family: serif;
 	letter-spacing: 0.07rem;
