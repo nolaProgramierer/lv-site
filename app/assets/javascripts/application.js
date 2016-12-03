@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(e) {
+	$("#about-lv").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#bio-lv").offset().top
+    }, 2000);
+    return false;
+	}); // end click
+}); // end ready
