@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require_tree .
 
 $(document).ready(function(e) {
@@ -38,3 +39,7 @@ $(document).ready(function(e) {
   //   });// end hover
 
 }); // end ready
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
