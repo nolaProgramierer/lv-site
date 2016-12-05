@@ -76,26 +76,28 @@
 // img gallery
 #img-gallery1 {
   margin-top: 30px;
+  border-bottom: thin solid gold;
 }
+// #img-gallery2 {
+//   border-bottom: thin solid gold;
+// }
 .nopadding {
    padding: 0;
 }
 .full-col {
   width: 100%;
 }
-
-
-.img-hover {
+.img-zoom {
   overflow: hidden;
 }
-.img-hover img {
+.img-zoom img {
     -webkit-transition: all .3s ease; /* Safari and Chrome */
   	-moz-transition: all .3s ease; /* Firefox */
   	-o-transition: all .3s ease; /* IE 9 */
   	-ms-transition: all .3s ease; /* Opera */
   	transition: all .3s ease;
 }
-.img-hover img:hover {
+.img-zoom img:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
@@ -106,4 +108,11 @@
     opacity: 0.8;
     filter: alpha(opacity=80);
     zoom: 1;  /* needed to trigger "hasLayout" in IE if no width or height is set */
+}
+
+// contact
+
+#contact {
+  background-color: gray;
+  min-height: 350px;
 }

@@ -23,11 +23,18 @@ $(document).ready(function(e) {
     return false;
 	}); // end click
 
+  $("#images-lv").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#img-gallery1").offset().top
+    }, 2000);
+    return false;
+	}); // end click
+
   // $('.img-hover').hover(function() {
   //       $(this).addClass('img-zoom');
   //
   //   }, function() {
   //       $(this).removeClass('img-zoom');
   //   });// end hover
-  
+
 }); // end ready
