@@ -22,4 +22,12 @@ $(document).ready(function(e) {
     }, 2000);
     return false;
 	}); // end click
+
+  // $('.img-hover').hover(function() {
+  //       $(this).addClass('img-zoom');
+  //
+  //   }, function() {
+  //       $(this).removeClass('img-zoom');
+  //   });// end hover
+  
 }); // end ready
