@@ -44,7 +44,7 @@
     </div>
     <div class="col-md-3 col-sm-3">
       <%= image_tag("laurie_majestic_nyc.jpg", alt: "Laurie standing outside the Majestic Theater",
-                    class: "img-responsive") %>
+                    class: "img-responsive", id: "lv-outside-majestic") %>
     </div>
   </div>
 
@@ -75,6 +75,17 @@
   </div>
 
   <div class="row" id="contact">
+      <div class="col-md-6 col-md-offset-3">
+        <hr class="double-line">
+      </div>
+      <div class="col-md-4">
+        <p>
+          For guest teaching information: <%= mail_to  '***REMOVED***' %>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <!-- image here -->
+      </div>
   </div>
     <p>
       The time is <%= Time.now %>.
