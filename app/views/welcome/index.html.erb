@@ -51,8 +51,8 @@
   <div class="row" id="img-gallery1">
       <div class="col-md-3 col-sm-3 col-xs-6 nopadding img-zoom preview">
       <%= link_to image_tag("lv_attitude_350x450.jpg", alt: "Laurie attitude",
-                            class: "img-responsive full-col"), "#",
-                            data: {toggle: "modal", target: "#myModal"} %>
+                            class: "img-responsive full-col"), "#myGallery",
+                            data: {toggle: "modal", target: "#myModal", to: "0"} %>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 nopadding img-zoom preview">
         <%= link_to image_tag("lv_arabesque_350x450.jpg", alt: "Laurie arabesque",
@@ -72,19 +72,19 @@
   </div>
   <div class="row" id="img-gallery2">
       <div class="col-md-4 col-sm-4 col-xs-4 nopadding img-zoom preview">
-      <%= image_tag("lv_phantom_ballet_girls.jpg", alt: "Laurie attitude",
+      <%= link_to image_tag("lv_phantom_ballet_girls.jpg", alt: "Laurie attitude",
                           class: "img-responsive full-col"), "#",
-                          data: {toggle: "modal", target: "myModal"} %>
+                          data: {toggle: "modal", target: "#myModal"} %>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4 nopadding img-zoom preview">
-        <%= image_tag("lv_phantom_last_perf.jpg", alt: "Laurie arabesque",
+        <%= link_to image_tag("lv_phantom_last_perf.jpg", alt: "Laurie arabesque",
                           class: "img-responsive full-col"), "#",
-                          data: {toggle: "modal", target: "myModal"} %>
+                          data: {toggle: "modal", target: "#myModal"} %>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4 nopadding img-zoom preview">
-        <%= image_tag("lv_phantom_masq_girls.jpg", alt: "Laurie attitude",
+        <%= link_to image_tag("lv_phantom_masq_girls.jpg", alt: "Laurie attitude",
                           class: "img-responsive full-col"), "#",
-                          data: {toggle: "modal", target: "myModal"} %>
+                          data: {toggle: "modal", target: "#myModal"} %>
       </div>
   </div>
 
