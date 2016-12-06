@@ -51,167 +51,145 @@
   <div class="row" id="img-gallery1">
       <div class="col-md-3 col-sm-3 col-xs-6 nopadding img-zoom preview">
       <%= link_to image_tag("lv_attitude_350x450.jpg", alt: "Laurie attitude",
-                            class: "img-responsive full-col"), "#myGallery",
-                            data: {toggle: "modal", target: "#myModal"} %>
+                            class: "img-responsive full-col",
+                            data: { toggle: "modal", target: "#myModal" }),
+                            "#myGallery", data: { slide_to: "0"} %>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 nopadding img-zoom preview">
         <%= link_to image_tag("lv_arabesque_350x450.jpg", alt: "Laurie arabesque",
-                            class: "img-responsive full-col"), "#myGallery",
-                            data: {toggle: "modal", target: "#myModal"} %>
+                            class: "img-responsive full-col",
+                            data: { toggle: "modal", target: "#myModal" }),
+                            "#myGallery", data: { slide_to: "1" } %>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 nopadding img-zoom preview">
         <%= link_to image_tag("lv_nut_clara_350x450.jpg", alt: "Laurie with Clara in Nutcracker",
-                            class: "img-responsive full-col"), "#myGallery",
-                            data: {toggle: "modal", target: "#myModal"} %>
+                            class: "img-responsive full-col",
+                              data: { toggle: "modal", target: "#myModal" }),
+                             "#myGallery", data: { slide_to: "2" } %>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 nopadding img-zoom preview">
       <%= link_to image_tag("lv_2pigeons_350x450.jpg", alt: "Laurie with 2 others in Two Pigeons",
-                            class: "img-responsive full-col"), "#myGallery",
-                            data: {toggle: "modal", target: "#myModal"} %>
+                            class: "img-responsive full-col",
+                            data: { toggle: "modal", target: "#myModal" }),
+                            "#myGallery", data: { slide_to: "3" } %>
       </div>
   </div>
   <div class="row" id="img-gallery2">
       <div class="col-md-4 col-sm-4 col-xs-4 nopadding img-zoom preview">
       <%= link_to image_tag("lv_phantom_ballet_girls.jpg", alt: "Laurie and the Phantom of the Opera ballet dancers",
-                          class: "img-responsive full-col"), "#myGallery",
-                          data: {toggle: "modal", target: "#myModal"} %>
+                          class: "img-responsive full-col",
+                          data: {toggle: "modal", target: "#myModal"}),
+                          "#myGallery", data: { slide_to: "4" } %>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4 nopadding img-zoom preview">
         <%= link_to image_tag("lv_phantom_last_perf.jpg", alt: "Laurie taking her final Phantom of the Opera bow",
-                          class: "img-responsive full-col"), "#myGallery",
-                          data: {toggle: "modal", target: "#myModal"} %>
+                          class: "img-responsive full-col",
+                          data: {toggle: "modal", target: "#myModal"}),
+                          "#myGallery", data: { slide_to: "5"} %>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4 nopadding img-zoom preview">
         <%= link_to image_tag("lv_phantom_masq_girls.jpg", alt: "Laurie with the Phantom of the Opera Masquerade dancers",
-                          class: "img-responsive full-col"), "#myGallery",
-                          data: {toggle: "modal", target: "#myModal"} %>
+                          class: "img-responsive full-col",
+                          data: {toggle: "modal", target: "#myModal"}),
+                          "#myGallery", data: { slide_to: "6"} %>
       </div>
   </div>
-
-
-  <div class="row">
-    <div class="col-md-3 col-sm-4 col-xs-4 nopadding img-zoom preview" data-toggle="modal" data-target="#myModal">
-      <!-- <a href="#myGallery" data-slide-to="1"> -->
-
-        <%= link_to image_tag("lv_attitude_350x450.jpg", alt: "Laurie attitude",
-                      class: "img-responsive full-col"), "#myGallery", data: { 'slide-to': "1"} %><br>
-        <!-- Caption</a> -->
-    </div>
-    <div class="col-md-3 col-sm-4 col-xs-4 nopadding img-zoom preview" data-toggle="modal" data-target="#myModal">
-      <a href="#myGallery" data-slide-to="1"><img class="img-responsive full-col" src="assets/lv_attitude_350x450.jpg"><br>
-        Caption</a>
-    </div>
-    <div class="col-md-3 col-sm-4 col-xs-4 nopadding img-zoom preview" data-toggle="modal" data-target="#myModal">
-      <a href="#myGallery" data-slide-to="2"><img class="img-responsive full-col" src="assets/lv_attitude_350x450.jpg"><br>
-        Caption</a>
-    </div>
-    <div class="col-md-3 col-sm-4 col-xs-4 nopadding img-zoom preview" data-toggle="modal" data-target="#myModal">
-      <a href="#myGallery" data-slide-to="3"><img class="img-responsive full-col" src="assets/lv_attitude_350x450.jpg"><br>
-        Caption</a>
-    </div>
-  </div>
-
-<ul class="list-inline">
-    <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0">
-      <img class="img-thumbnail" src="http://lorempixel.com/200/133/nature/1"><br>
-  Caption</a></li>
-    <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="1">
-      <img class="img-thumbnail" src="http://lorempixel.com/200/133/nature/2"><br>
-  Caption</a></li>
-    <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2">
-      <img class="img-thumbnail" src="http://lorempixel.com/200/133/nature/3"><br>
-  Caption</a></li>
-    <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3">
-      <img class="img-thumbnail" src="http://lorempixel.com/200/133/nature/4"><br>
-  Caption</a></li>
-    <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="4">
-      <img class="img-thumbnail" src="http://lorempixel.com/200/133/nature/5"><br>
-  Caption</a></li>
-    <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="5">
-      <img class="img-thumbnail" src="http://lorempixel.com/200/133/nature/6"><br>
-  Caption</a></li>
-  </ul>
-<!--end of thumbnails-->
-
 
 <!--begin modal window-->
 <div class="modal fade" id="myModal">
   <div class="modal-dialog">
       <div class="modal-content">
           <div class="modal-header">
-            <div class="pull-left">My Gallery Title</div>
+            <div class="pull-left">Laurie's Picture Gallery</div>
               <button type="button" class="close" data-dismiss="modal" title="Close">
-                <span class="glyphicon glyphicon-remove"></span></button>
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
           </div>
-<div class="modal-body">
-
-  <!--CAROUSEL CODE GOES HERE-->
-  <!--begin carousel-->
-  <div id="myGallery" class="carousel slide" data-interval="false">
-    <div class="carousel-inner">
-      <div class="item active">
-        <%= image_tag("lv_attitude_350x450.jpg", alt: "Laurie attitude",
-                      class: "img-responsive full-col") %>
-        <div class="carousel-caption">
-          <h3>Heading 3</h3>
-          <p>Slide 0  description.</p>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("lv_arabesque_350x450.jpg", alt: "Laurie arabesque",
-                      class: "img-responsive full-col") %>
-        <div class="carousel-caption">
-          <h3>Heading 3</h3>
-          <p>Slide 1 description.</p>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("lv_nut_clara_350x450.jpg", alt: "Laurie with Clara in Nutcracker",
-                      class: "img-responsive full-col") %>
-        <div class="carousel-caption">
-          <h3>Heading 3</h3>
-          <p>Slide 2  description.</p>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("lv_2pigeons_350x450.jpg", alt: "Laurie with 2 others in Two Pigeons",
-                      class: "img-responsive full-col") %>
-        <div class="carousel-caption">
-          <h3>Heading 3</h3>
-          <p>Slide 3 description.</p>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("lv_phantom_ballet_girls.jpg", alt: "Laurie and the Phantom of the Opera ballet dancers",
-                      class: "img-responsive full-col") %>
-        <div class="carousel-caption">
-          <h3>Heading 3</h3>
-          <p>Slide 4 description.</p>
-        </div>
-      </div>
-      <div class="item"> <%= image_tag("lv_phantom_masq_girls.jpg", alt: "Laurie with the Phnatom of the Opera Masquerade dancers",
+  <div class="modal-body">
+    <!--CAROUSEL CODE GOES HERE-->
+    <!--begin carousel-->
+    <div id="myGallery" class="carousel slide" data-interval="false">
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag("lv_attitude_350x450.jpg",
+                        alt: "Laurie attitude",
                         class: "img-responsive full-col") %>
-        <div class="carousel-caption">
-          <h3>Heading 3</h3>
-          <p>Slide 5 description.</p>
+          <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Slide 0  description.</p>
+          </div>
         </div>
-      </div>
-  </div><!--end carousel-inner-->
-  <!--Begin Previous and Next buttons-->
-    <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
-      href="#myGallery" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-</div><!--end carousel-->
+        <div class="item">
+          <%= image_tag("lv_arabesque_350x450.jpg",
+                        alt: "Laurie arabesque",
+                        class: "img-responsive full-col") %>
+          <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Slide 1 description.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("lv_nut_clara_350x450.jpg",
+                        alt: "Laurie with Clara in Nutcracker",
+                        class: "img-responsive full-col") %>
+          <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Slide 2  description.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("lv_2pigeons_350x450.jpg",
+                        alt: "Laurie with 2 others in Two Pigeons",
+                        class: "img-responsive full-col") %>
+          <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Slide 3 description.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("lv_phantom_ballet_girls.jpg",
+                        alt: "Laurie and the Phantom of the Opera ballet dancers",
+                        class: "img-responsive full-col") %>
+          <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Slide 4 description.</p>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("lv_phantom_last_perf.jpg",
+                        alt: "Laurie taking her last bow with Phantom of the Opera",
+                        class: "img-responsive full-col") %>
+          <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Slide 4 description.</p>
+          </div>
+        </div>
+        <div class="item"> <%= image_tag("lv_phantom_masq_girls.jpg",
+                          alt: "Laurie with the Phnatom of the Opera Masquerade dancers",
+                          class: "img-responsive full-col") %>
+          <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Slide 5 description.</p>
+          </div>
+        </div>
+    </div><!--end carousel-inner-->
+    <!--Begin Previous and Next buttons-->
 
-</div><!--end modal-body-->
-    <div class="modal-footer">
-      <div class="pull-left">
-        <small>Photographs by <a href="http://lorempixel.com" target="new">Lorempixel.com</a></small>
-      </div>
-        <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
-    </div><!--end modal-footer-->
+      <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
+        href="#myGallery" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!--end carousel-->
+
+  </div><!--end modal-body-->
+      <div class="modal-footer">
+        <div class="pull-left">
+          <small>Photographs by <a href="http://lorempixel.com" target="new">Lorempixel.com</a></small>
+        </div>
+          <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
+      </div><!--end modal-footer-->
+
     </div><!--end modal-content-->
   </div><!--end modal-dialoge-->
 </div><!--end myModal-->
