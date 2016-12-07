@@ -83,9 +83,6 @@
   margin-top: 30px;
   border-bottom: thin solid gold;
 }
-// #img-gallery2 {
-//   border-bottom: thin solid gold;
-// }
 .nopadding {
    padding: 0;
 }
@@ -114,7 +111,9 @@
     filter: alpha(opacity=80);
     zoom: 1;  /* needed to trigger "hasLayout" in IE if no width or height is set */
 }
-
+.modal-content {
+  background-color: #f0f0f1;
+}
 
 // contact
 
