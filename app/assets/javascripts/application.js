@@ -15,8 +15,8 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
-
-$(document).ready(function(e) {
+$(document).on('turbolinks:load', function(e){
+// $(document).ready(function(e) {
 	$("#about-lv").click(function() {
     $('html, body').animate({
         scrollTop: $("#bio-lv").offset().top
@@ -31,15 +31,8 @@ $(document).ready(function(e) {
     return false;
 	}); // end click
 
-  // $('.img-hover').hover(function() {
-  //       $(this).addClass('img-zoom');
-  //
-  //   }, function() {
-  //       $(this).removeClass('img-zoom');
-  //   });// end hover
-
 }); // end ready
 
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
+// $('#myModal').on('shown.bs.modal', function () {
+//   $('#myInput').focus()
+// })
