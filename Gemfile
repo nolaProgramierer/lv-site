@@ -52,5 +52,4 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
-
 ruby "2.3.2"
