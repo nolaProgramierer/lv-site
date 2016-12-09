@@ -1,5 +1,10 @@
 <% provide(:title, "Blog Article") %>
 
+<!-- helper to display link back to Article in articles layout -->
+<% content_for :article_nav do %>
+   <li><%= link_to 'Articles', articles_path %></li>
+ <% end %>
+
   <div class="row text-center articles-section">
     <h1><%= @article.title.html_safe %></h1>
     <p class="article-created-time">
