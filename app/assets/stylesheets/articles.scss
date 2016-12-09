@@ -7,6 +7,7 @@
 $serif-default: 'Volkorn', serif;
 $sans-serif-default: 'Ubuntu', sans-serif;
 
+// navbar header
 .navbar {
   font-family: $sans-serif-default;
 }
@@ -25,6 +26,8 @@ $sans-serif-default: 'Ubuntu', sans-serif;
   width: 100%;
   height: 100%;
 }
+
+// article section
 #articles-nav {
   border-radius: 0px;
 }
@@ -45,21 +48,20 @@ $sans-serif-default: 'Ubuntu', sans-serif;
 	color: #3A4145;
 	font-weight: 300;
 	padding-top: 20px;
+    h1 {
+    	font-family: $sans-serif-default;
+    	font-weight: 300;
+    	color: #3A4145;
+    }
+    a {
+    	color: inherit;
+      &:hover {
+      	text-decoration: none;
+      }
+    }
 }
 .article-created-time {
   color: lightgray;
   font-size: 1.4rem;
   font-family: $sans-serif-default;
-  // font-family: $sans-serif-font;
-}
-.articles-section a {
-	color: inherit;
-}
-.articles-section a:hover {
-	text-decoration: none;
-}
-.articles-section h1 {
-	font-family: $sans-serif-default;
-	font-weight: 300;
-	color: #3A4145;
 }
