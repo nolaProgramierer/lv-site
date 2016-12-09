@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Laurie Langdon's web site</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'articles', 'https://fonts.googleapis.com/css?family=Ubuntu|Vollkorn',
+                                media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  </head>
+  <body>
+    <header class="navbar navbar-inverse" id="articles-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <p class="navbar-text", id="nav-name"> Laurie Langdon </p>
+            <p class="navbar-text", id="nav-text"> Thoughts on ballet, music theater, and dance  </p>
+          </div>
+        <nav>
+          <ul class="nav navbar-nav navbar-right" id="article-nav-links">
+            <li><%= link_to "Back to site", root_path %></li>
+          </ul>
+        </nav>
+        <div class="row">
+          <%= image_tag('ballet_barre.jpg', alt: "Ballet barre", class: "img-responsive", id: "ballet-barre-img") %>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <%= yield %>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+  </body>
+</html>

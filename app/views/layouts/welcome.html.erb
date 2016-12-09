@@ -4,7 +4,8 @@
     <title><%= yield(:title) %> | Laurie Langdon's web site</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Ubuntu|Vollkorn',
+                                media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -15,9 +16,10 @@
       <div class="container-fluid">
         <nav>
           <ul class="nav navbar-nav">
-            <li><%= link_to "About",   "#", id: "about-lv"%></li>
-            <li><%= link_to "Images",     "#", id: "images-lv" %></li>
-            <li><%= link_to "Contact",    "#" , id: "contact-lv"%></li>
+            <li><%= link_to "About",      "#",  id: "about-lv"%></li>
+            <li><%= link_to "Images",     "#",  id: "images-lv" %></li>
+            <li><%= link_to "Contact",    "#" , id: "contact-lv" %></li>
+            <li><%= link_to "Blog", articles_path %></li>
           </ul>
         </nav>
       </div>
