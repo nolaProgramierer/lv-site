@@ -11,11 +11,14 @@
       <%= @article.body.html_safe %>
     </div>
   </div>
-  <div class="row">
-    <%= link_to "Back to Articles", articles_path, class: "col-md-2" %>
-    <%= link_to "Edit Article", edit_article_path(@article), class: "col-md-2" %>
-    <%= link_to "Delete Article", article_path(@article),
-              mehtod: :delete,
-              data: {confirm: 'Are you sure?'},
-              class: "col-md-2" %>
-  </div>
+  <% if logged_in? %>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-2">
+      <%# link_to "Back to Articles", articles_path, class: "btn btn-info" %>
+      <%= link_to "Edit Article", edit_article_path(@article) %>
+      <%= link_to "Delete Article", article_path(@article),
+                mehtod: :delete,
+                data: {confirm: 'Are you sure?'} %>
+      </div>
+    </div>
+  <% end %>
