@@ -10,9 +10,8 @@ $sans-serif-default: 'Ubuntu', sans-serif;
 body {
   font-family: $serif-default;
 }
-// Move image into transparent navbar background
 #splash-img {
-  margin-top: -60px;
+  margin-top: -60px;    // Move image into transparent navbar background
 }
 // .center-block {
 //   display: block;
@@ -75,26 +74,27 @@ body {
 }
 .img-zoom {
   overflow: hidden;
+  img {
+      -webkit-transition: all .3s ease; /* Safari and Chrome */
+    	-moz-transition: all .3s ease; /* Firefox */
+    	-o-transition: all .3s ease; /* IE 9 */
+    	-ms-transition: all .3s ease; /* Opera */
+    	transition: all .3s ease;
+      &:hover {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+          -moz-transform:scale(1.20); /* Firefox */
+          -ms-transform:scale(1.20); /* IE 9 */
+          -o-transform:translatZ(0) scale(1.20); /* Opera */
+          transform:translatZ(0) scale(1.20);
+          opacity: 0.8;
+          filter: alpha(opacity=80);
+          zoom: 1;  /* needed to trigger "hasLayout" in IE if no width or height is set */
+    }
+  }
 }
-.img-zoom img {
-    -webkit-transition: all .3s ease; /* Safari and Chrome */
-  	-moz-transition: all .3s ease; /* Firefox */
-  	-o-transition: all .3s ease; /* IE 9 */
-  	-ms-transition: all .3s ease; /* Opera */
-  	transition: all .3s ease;
-}
-.img-zoom img:hover {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
-    -moz-transform:scale(1.20); /* Firefox */
-    -ms-transform:scale(1.20); /* IE 9 */
-    -o-transform:translatZ(0) scale(1.20); /* Opera */
-    transform:translatZ(0) scale(1.20);
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-    zoom: 1;  /* needed to trigger "hasLayout" in IE if no width or height is set */
-}
+
 .modal-content {
   background-color: #f0f0f1;
 }
@@ -108,11 +108,11 @@ body {
 hr.double-line {
 	border-top: 1px solid lightgray;
 	border-bottom: 1px solid #fff;
-}
-hr.double-line:after {
-	content: '';
-	display: block;
-	margin-top: 2px;
-	border-top: 1px solid lightgray;
-	border-bottom: 1px solid #fff;
+  &:after {
+  	content: '';
+  	display: block;
+  	margin-top: 2px;
+  	border-top: 1px solid lightgray;
+  	border-bottom: 1px solid #fff;
+  }
 }
