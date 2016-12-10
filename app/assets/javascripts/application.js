@@ -20,7 +20,7 @@ $(document).on('turbolinks:load', function(e){
 	$("#about-lv").click(function() {
     $('html, body').animate({
         scrollTop: $("#bio-lv").offset().top
-    }, 2000);
+    }, 1500);
     return false;
 	}); // end click
 
@@ -28,6 +28,13 @@ $(document).on('turbolinks:load', function(e){
     $('html, body').animate({
         scrollTop: $("#img-gallery1").offset().top
     }, 2000);
+    return false;
+	}); // end click
+
+	$("#contact-lv").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 2500);
     return false;
 	}); // end click
 
