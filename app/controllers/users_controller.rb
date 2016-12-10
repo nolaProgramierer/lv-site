@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  include SessionsHelper
+  before_action :require_login
 
   def index
     @users = User.all
