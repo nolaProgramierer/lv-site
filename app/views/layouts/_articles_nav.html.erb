@@ -1,0 +1,27 @@
+<header class="navbar navbar-inverse" id="articles-nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <p class="navbar-text", id="nav-name"> Laurie Langdon </p>
+        <p class="navbar-text", id="nav-text"> Thoughts on ballet, music theater, and dance  </p>
+      </div>
+    <nav>
+      <ul class="nav navbar-nav navbar-right" id="article-nav-links">
+        <%= content_for :articles_show_nav %>
+        <li><%= link_to "Back to site", root_path %></li>
+        <% if logged_in? %>
+          <li class="nav-item dropdown">
+            <%= link_to "Admin", "#", class: "nav-link dropdown-toggle", id: "responsiveNavbarDropdown",
+                data: { toggle: "dropdown"}, aria: { haspopup: "true", expanded: "false" } %>
+                <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                  <%= link_to "New Article", new_article_path, class: "dropdown-item" %><br>
+                  <%= link_to "Logout", logout_path, method: "delete", class: "dropdown-item" %>
+                </div>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+    <div class="row">
+      <%= image_tag('ballet_barre.jpg', alt: "Ballet barre", class: "img-responsive", id: "ballet-barre-img") %>
+    </div>
+  </div>
+</header>
