@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
 $(document).on('turbolinks:load', function(e){
 // $(document).ready(function(e) {
 	$("#about-lv").click(function() {
@@ -39,7 +40,3 @@ $(document).on('turbolinks:load', function(e){
 	}); // end click
 
 }); // end ready
-
-// $('#myModal').on('shown.bs.modal', function () {
-//   $('#myInput').focus()
-// })
