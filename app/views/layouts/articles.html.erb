@@ -22,7 +22,7 @@
           </div>
         <nav>
           <ul class="nav navbar-nav navbar-right" id="article-nav-links">
-            <%= yield :article_nav %>
+            <%= content_for :articles_show_nav %>
             <li><%= link_to "Back to site", root_path %></li>
             <% if logged_in? %>
               <li class="nav-item dropdown">
