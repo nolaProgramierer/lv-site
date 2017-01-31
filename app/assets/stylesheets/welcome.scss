@@ -56,6 +56,10 @@ body {
   box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
 }
 
+.line-divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 // img gallery
 #img-gallery1 {
   margin-top: 30px;
@@ -98,7 +102,7 @@ body {
 
 #contact {
   margin-top: 30px;
-  min-height: 350px;
+  min-height: 50px;
 }
 hr.double-line {
 	border-top: 1px solid lightgray;
@@ -110,4 +114,27 @@ hr.double-line {
   	border-top: 1px solid lightgray;
   	border-bottom: 1px solid #fff;
   }
+}
+#studio-img {
+  padding-right: 0px !important;
+}
+blockquote {
+  // margin-left: 20px;
+  // background-color: #fbfbfb;
+  // background: #f9f9f9;
+  // border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+    & :before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4.5em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    }
+      p {
+        font-size: 30px;
+      }
 }

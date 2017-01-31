@@ -29,6 +29,15 @@
     </div>
   </div>
 
+  <div class="row">
+      <div class="col-md-6 col-md-offset-3 line-divider">
+        <hr class="double-line">
+      </div>
+  </div>
+  <div class="row">
+    <h1 class="text-center">At the Theater</h1>
+  </div>
+
   <div class="row" id="img-gallery1">
       <div class="col-md-3 col-sm-3 col-xs-6 nopadding img-zoom">
       <%= link_to image_tag("lv_attitude_600x750.jpg", alt: "Laurie attitude",
@@ -179,15 +188,29 @@
 
 
   <div class="row" id="contact">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 col-md-offset-3 line-divider">
         <hr class="double-line">
       </div>
-      <div class="col-md-4">
-        <p>
-          For guest teaching information: <%= mail_to  '***REMOVED***' %>
-        </p>
-      </div>
-      <div class="col-md-6">
-        <!-- image here -->
-      </div>
   </div>
+  <div class="row">
+    <h1 class="text-center">In the Studio</h1>
+  </div>
+
+  <div class="row">
+    <div>
+      <div class= "quote col-md-6 col-sm-6 col-xs-6">
+        <blockquote>
+          <p>
+            Ballet is more than a profession - it is a way of life.
+          </p>
+        </blockquote>
+      </div>
+      <div>
+        <%= image_tag('lv_footer_pic.jpg', alt: "Laurie teaching a class", class: "col-md-6 col-sm-6 col-xs-6 img-responsive", id: 'studio-img') %>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
