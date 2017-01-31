@@ -119,22 +119,15 @@ hr.double-line {
   padding-right: 0px !important;
 }
 blockquote {
-  // margin-left: 20px;
-  // background-color: #fbfbfb;
-  // background: #f9f9f9;
-  // border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-    & :before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4.5em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-    }
+  margin-top: 40px;
+  margin-left: 20px;
       p {
         font-size: 30px;
       }
+}
+// footer
+#footer-row {
+  min-height: 250px;
+  background-color: #2b292c;
+  border-top: thin solid gold;
 }
