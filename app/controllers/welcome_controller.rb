@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
 
 
   def index
-      @contact = Welcome.new(contact_params)
+      @contact = Welcome.new(params[:welcome])
       if @contact.deliver
         redirect_to :back, :notice => "Thank you for contacting us, We'll get back to you shortly!"
       else
@@ -22,9 +22,9 @@ class WelcomeController < ApplicationController
   #   end
   # end
 
-  def new
-    @contact = Welcome.new
-  end
+  # def new
+  #   @contact = Welcome.new
+  # end
 
   def create
     @contact = Welcome.new(params[:welcome])
@@ -40,6 +40,6 @@ class WelcomeController < ApplicationController
   #
   # private
   #   def contact_params
-  #     params.require(:welcome).permit(:name, :email, :message)
+  #     params.require(:welcome).permit(:name, :email, :message, :nickname)
   #   end
 end
