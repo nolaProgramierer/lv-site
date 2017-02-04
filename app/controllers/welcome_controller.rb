@@ -1,25 +1,19 @@
 class WelcomeController < ApplicationController
+  include WelcomeHelper
 
   def index
       @contact = Welcome.new(params[:welcome])
-      if @contact.deliver
-        redirect_to :back, :notice => "Thank you for contacting us,
-                                       We'll get back to you shortly!"
-      else
-        flash.now[:error] = 'Sorry, it looks like there was an error with your message,
-                             Please give us a call or shoot us a text at ....'
-      end
     end
 
   def create
     @contact = Welcome.new(params[:welcome])
     @contact.request = request
     if @contact.deliver
-      flash[:notice] = 'Thank you for your message. We will contact you soon!'
-      redirect_to root_url
+      flash[:notice] = "Thank you for your message. I'll get back to you soon!"
+      js_page_refresh
     else
-      flash.now[:error] = 'Cannot send message.'
-      render :new
+      flash[:error] = "Message did not send."
+      js_page_refresh
     end
   end
   #
