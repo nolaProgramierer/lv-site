@@ -130,13 +130,40 @@ blockquote {
   min-height: 250px;
   background-color: #2b292c;
   border-top: thin solid gold;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+#footer-nav-text {
+  color: white;
+  font-size: 1.5em;
+}
+#contact-form {
+    color: white;
+  }
+#contact-text {
+    color: white;
+    font-size: 1.5em;
 }
 
 
-
-.hidden { display: none; }
+#footer-nav-list {
+  color: white;
+  ul {
+    list-style-type: none;
+    font-size: 1.3em;
+    a {
+      color: lightgray;
+      text-decoration: none;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 /*flash*/
+.hidden { display: none; }
 
 .alert-error {
 background-color: #f2dede;

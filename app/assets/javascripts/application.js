@@ -34,10 +34,33 @@ $(document).on('turbolinks:load', function(e){
 
 	$("#contact-lv").click(function() {
     $('html, body').animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $("#footer-row").offset().top
+    }, 3000);
+    return false;
+	}); // end click
+
+	$("#footer-to-top").click(function() {
+    $('html, body').animate({
+        scrollTop: 0
     }, 2500);
     return false;
 	}); // end click
+
+	$("#footer-to-bio").click(function() {
+    $('html, body').animate({
+			scrollTop: $("#bio-lv").offset().top
+		}, 2000);
+		return false;
+	}); // end click
+
+	$("#footer-to-images").click(function() {
+    $('html, body').animate({
+			scrollTop: $(".line-divider").offset().top
+		}, 2000);
+		return false;
+	}); // end click
+
+
 
 	// fade out for flash message on contact form send
 	setTimeout(function(){
