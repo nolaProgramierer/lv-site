@@ -1,30 +1,15 @@
 class WelcomeController < ApplicationController
 
-  # def index
-  # end
-
-
   def index
       @contact = Welcome.new(params[:welcome])
       if @contact.deliver
-        redirect_to :back, :notice => "Thank you for contacting us, We'll get back to you shortly!"
+        redirect_to :back, :notice => "Thank you for contacting us,
+                                       We'll get back to you shortly!"
       else
-        flash.now[:error] = 'Sorry, it looks like there was an error with your message, Please give us a call or shoot us a text at ....'
+        flash.now[:error] = 'Sorry, it looks like there was an error with your message,
+                             Please give us a call or shoot us a text at ....'
       end
     end
-
-  #   def create
-  #   @contact = Welcome.new(params[:page])
-  #   if @contact.deliver
-  #     redirect_to :back, :notice => "Thank you for contacting us, We'll get back to you shortly!"
-  #   else
-  #     flash.now[:error] = 'Sorry, it looks like there was an error with your message, Please give us a call or shoot us a text at ....'
-  #   end
-  # end
-
-  # def new
-  #   @contact = Welcome.new
-  # end
 
   def create
     @contact = Welcome.new(params[:welcome])
