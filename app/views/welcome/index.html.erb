@@ -219,13 +219,15 @@
 
     </div>
     <div class="col-md-6">
-      <%= form_for :welcome, url: welcome_index_path, remote: true do |f| %>
+      <%= form_for @contact, url: welcome_index_path, remote: true do |f| %>
     <div class="inner">
       <div class="col-md-7">
-            <%= f.text_field :name, :required => true, :hide_label => true, :placeholder => "Name" %>
-            <%= f.text_field :email, :required => true, :hide_label => true, :placeholder => "Email" %>
-            <%= f.text_area :message, size: "60x10", :required => true, :hide_label => true, :placeholder => "Hello, we'd love to work with you" %>
-
+            <%= f.text_field  :name, :required => true, :hide_label => true,
+                              :placeholder => "Name" %>
+            <%= f.text_field  :email, :required => true, :hide_label => true,
+                              :placeholder => "Email" %>
+            <%= f.text_area   :message, size: "60x10", :required => true, :hide_label => true,
+                              :placeholder => "Hello, we'd love to work with you" %>
             <%= f.submit 'Send Message', class: 'custom-button' %>
             <% end %>
       </div>
