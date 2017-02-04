@@ -42,7 +42,9 @@ body {
     }
   }
 
-
+h1 {
+  font-family: $sans-serif-default;
+}
 // bio section
 #bio-lv {
   font-family: $serif-default;
@@ -133,21 +135,25 @@ blockquote {
   padding-bottom: 30px;
   padding-top: 15px;
 }
-#footer-nav-text {
+#footer-nav-title {
   color: white;
   font-size: 1.5em;
+  font-family: $sans-serif-default;
 }
 #contact-form {
     color: white;
+    font-family: $sans-serif-default;
   }
+.contact-form-text-area {
+  color: black;
+}
 #contact-text {
     color: white;
     font-size: 1.5em;
 }
-
-
 #footer-nav-list {
   color: white;
+  font-family: $sans-serif-default;
   ul {
     list-style-type: none;
     font-size: 1.3em;
