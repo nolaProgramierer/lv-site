@@ -10,10 +10,10 @@ class WelcomeController < ApplicationController
     @contact.request = request
     if @contact.deliver
       flash[:notice] = "Thank you for your message. I'll get back to you soon!"
-      js_page_refresh
+      redirect_to root_path
     else
       flash[:error] = "Message did not send."
-      js_page_refresh
+      render :index
     end
   end
   #
