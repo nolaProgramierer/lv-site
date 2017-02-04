@@ -63,8 +63,8 @@ $(document).on('turbolinks:load', function(e){
 
 
 	// fade out for flash message on contact form send
-	setTimeout(function(){
-    $('.alert').fadeOut();
-	}, 3000, 'slow');
+	// setTimeout(function(){
+  //   $('.alert').fadeOut();
+	// }, 4000, 'slow');
 
 }); // end ready
