@@ -8,7 +8,7 @@ class Welcome < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Hello there",
+      :subject => "Contact Laurie",
       :to => "***REMOVED***",
       :from => %("#{name}" <#{email}>)
     }
