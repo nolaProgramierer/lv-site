@@ -54,4 +54,6 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 gem 'mail_form'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 ruby "2.3.2"
