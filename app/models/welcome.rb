@@ -9,8 +9,18 @@ class Welcome < MailForm::Base
   def headers
     {
       :subject => "Contact Laurie",
-      :to => "***REMOVED***",
+      :to => mailer_env,
       :from => %("#{name}" <#{email}>)
     }
   end
+
+  private
+    def mailer_env
+      email = "***REMOVED***"
+      if Rails.env.production?
+        email
+      else
+        email = "***REMOVED***"
+      end
+    end
 end
