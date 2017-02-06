@@ -1,1 +1,5 @@
-console.log("It's working")
+// Test for ajax success
+console.log("this is the create.js.erb file");
+// Render contact form partial
+$('#contact-form').html("<%= j render 'contact_form' %>");
+$('#flash-message').html("<%= flash[:notice] %>")
