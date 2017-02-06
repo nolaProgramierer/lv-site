@@ -60,16 +60,10 @@ $(document).on('turbolinks:load', function(e){
 		return false;
 	}); // end click
 
-	// $('#contact-form').on('ajax:error', function(event, xhr, status, error) {
-	//   // insert the failure message inside the "#account_settings" element
-	//   // $("#contact-form").append(xhr.responseText)
-	// 	// $("#contact-form").append("<%= j render(partial: 'welcome/contact_form') %>")
-	// 	console.log("Error on ajax submission");
-	// });
 
 	// fade out for flash message on contact form send
 	// setTimeout(function(){
-  //   $('.alert').fadeOut();
+  //   $('.alert-success').fadeOut();
 	// }, 4000, 'slow');
 
 }); // end ready

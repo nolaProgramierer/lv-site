@@ -9,20 +9,14 @@ class WelcomeController < ApplicationController
     @contact.request = request
     respond_to do |format|
     if @contact.deliver
-      # flash[:notice] = "Thank you for your message. I'll get back to you soon!"
       # re-initialize Welcome object for cleared form
       @contact = Welcome.new
       format.html { render 'index'}
-      format.js { flash[:notice] = "Thank you for your message. I'll get back to you soon!" }
+      format.js   { flash.now[:notice] = @message = "Thank you for your message. I'll get back to you soon!" }
     else
-      flash[:error] = "Message did not send."
-      render :index
+      format.html { render 'index' }
+      format.js   { flash.now[:error] = @message = "Message did not send." }
     end
   end
 end
 end
-  #
-  # private
-  #   def contact_params
-  #     params.require(:welcome).permit(:name, :email, :message, :nickname)
-  #   end
