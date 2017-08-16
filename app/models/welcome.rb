@@ -16,11 +16,11 @@ class Welcome < MailForm::Base
 
   private
     def mailer_env
-      email = "***REMOVED***"
+      email = "laurievlangdon@gmail.com"
       if Rails.env.production?
         email
       else
-        email = "***REMOVED***"
+        email = "glennlangdon@gmail.com"
       end
     end
 end
