@@ -53,11 +53,14 @@ h1 {
   border-top: medium double black;
 }
 #lv-outside-majestic {
+  margin: 0px 0px 10px 10px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
   -moz-box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
   box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
 }
-
+#harlequinade-video {
+  margin-top: 30px;
+}
 .line-divider {
   margin-top: 20px;
   margin-bottom: 20px;
