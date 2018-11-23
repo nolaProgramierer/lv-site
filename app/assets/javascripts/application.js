@@ -60,6 +60,7 @@ $(document).on('turbolinks:load', function(e){
 		return false;
 	}); // end click
 
+<<<<<<< HEAD
 	$("#footer-to-videos").click(function() {
     $('html, body').animate({
 			scrollTop: $("#in-performance").offset().top
@@ -70,10 +71,19 @@ $(document).on('turbolinks:load', function(e){
 	$("#footer-to-images").click(function() {
     $('html, body').animate({
 			scrollTop: $("#at-theater").offset().top
+=======
+	$("#footer-to-images").click(function() {
+    $('html, body').animate({
+			scrollTop: $(".line-divider").offset().top
+>>>>>>> 5fb5ec1ac183909517ae7742744c74a5c2cf802e
 		}, 2000);
 		return false;
 	}); // end click
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fb5ec1ac183909517ae7742744c74a5c2cf802e
 	// fade out for flash message on contact form send
 	// setTimeout(function(){
   //   $('.alert-success').fadeOut();
