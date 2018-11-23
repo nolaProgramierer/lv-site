@@ -34,7 +34,7 @@ $(document).on('turbolinks:load', function(e){
 
   $("#images-lv").click(function() {
     $('html, body').animate({
-        scrollTop: $("#img-gallery1").offset().top
+        scrollTop: $("#at-theater").offset().top
     }, 2000);
     return false;
 	}); // end click
