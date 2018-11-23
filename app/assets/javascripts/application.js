@@ -25,6 +25,13 @@ $(document).on('turbolinks:load', function(e){
     return false;
 	}); // end click
 
+	$("#videos-lv").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#in-performance").offset().top
+		}, 1500);
+		return false;
+	}); // end click
+
   $("#images-lv").click(function() {
     $('html, body').animate({
         scrollTop: $("#img-gallery1").offset().top
@@ -53,13 +60,19 @@ $(document).on('turbolinks:load', function(e){
 		return false;
 	}); // end click
 
-	$("#footer-to-images").click(function() {
+	$("#footer-to-videos").click(function() {
     $('html, body').animate({
-			scrollTop: $(".line-divider").offset().top
+			scrollTop: $("#in-performance").offset().top
 		}, 2000);
 		return false;
 	}); // end click
 
+	$("#footer-to-images").click(function() {
+    $('html, body').animate({
+			scrollTop: $("#at-theater").offset().top
+		}, 2000);
+		return false;
+	}); // end click
 
 	// fade out for flash message on contact form send
 	// setTimeout(function(){
