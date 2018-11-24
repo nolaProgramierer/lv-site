@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Latest stable build of ruby of of 181128
-ruby "2.3.2"
+ruby "2.5.3"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use pg as the database for Active Record
