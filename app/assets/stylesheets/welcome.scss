@@ -58,6 +58,16 @@ h1 {
   -moz-box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
   box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
 }
+#lv-hal {
+  margin: 0px 10px 10px -10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
+  box-shadow: 10px 10px 5px 0px rgba(222,222,222,1);
+}
+#lvl-hal-caption {
+  font-size: 1.5rem;
+  color: darkgray;
+}
 #harlequinade-video {
   margin-top: 30px;
 }
